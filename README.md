@@ -1,6 +1,6 @@
 # Woody-woodpacker
 
-4-bit ELF binary packer that injects x86-64 assembly into executables and encrypts their code at the binary level. It parses the ELF structure to locate the `.text` section, encrypts it with a randomly generated key, and embeds a custom decryption stub directly into the binary, in the gap between ELF segments. When the packed binary is executed, the stub decrypts the original code at runtime and transfers control to it, running identically to the original.
+64-bit ELF binary packer that injects x86-64 assembly into executables and encrypts their code at the binary level. It parses the ELF structure to locate the '.text' section, encrypts it with a randomly generated key, and embeds a custom decryption stub directly into the binary, in the gap between ELF segments. When the packed binary is executed, the stub decrypts the original code at runtime and transfers control to it, running identically to the original.
 
 ## Usage
 
